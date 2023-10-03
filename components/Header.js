@@ -6,6 +6,7 @@ export function Header(props) {
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
+          
           <code className={styles.code}>src/app/{props.page}.js</code>
         </p>
       </div>

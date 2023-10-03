@@ -9,6 +9,7 @@ export function Links() {
         className={styles.card}
         target="_blank"
         rel="noopener noreferrer"
+        
     >
         <h2>
         Docs <span>-&gt;</span>
