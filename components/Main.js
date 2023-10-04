@@ -1,20 +1,20 @@
 "use client"
 
 import Image from 'next/image'
-import styles from '../src/app/page.module.css'
+import classes from './Main.module.css'
 import { Links } from './Links'
 import { Header } from './Header'
 
 export function Main(props) {
   return (
-    <main className={styles.main}>
+    <main className={classes.main}>
 
       <Header page="index">
-      code={<code className={styles.code}>src/{props.root}/{props.page}.js</code>}
+      code={<code className={classes.code}>src/{props.root}/{props.page}.js</code>}
       </Header>
       
 
-      <div className={styles.description}>
+      <div className={classes.description}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
@@ -24,7 +24,7 @@ export function Main(props) {
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
+              className={classes.vercelLogo}
               width={100}
               height={24}
               priority
@@ -33,9 +33,9 @@ export function Main(props) {
         </div>
 
 
-      <div className={styles.center}>
+      <div className={classes.center}>
         <Image
-          className={styles.logo}
+          className={classes.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
