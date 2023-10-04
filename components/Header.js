@@ -1,15 +1,15 @@
-"use client"
+import Link from "next/link"
+import classes from "./Header.module.css"
 
-import classes from './Header.module.css'
-
-export function Header(props) {
-  return (
-      <div className={classes.description}>
-        <p>
-          Get started by editing&nbsp;
-          {props.children}
-        </p>
-
-      </div>
-  )
+export function Header() {
+    return (
+        <header className={classes.header}>
+            <Link href="/" className={classes.anchor}>
+                Index
+            </Link>
+            <Link href="/test" className={classes.anchor}>
+                Test
+            </Link>
+        </header>
+    )
 }
