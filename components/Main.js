@@ -3,15 +3,15 @@
 import Image from 'next/image'
 import classes from './Main.module.css'
 import { Links } from './Links'
-import { Header } from './Header'
+import { Headline } from './Headline'
 
 export function Main(props) {
   return (
     <main className={classes.main}>
 
-      <Header page="index">
+      <Headline page="index">
       code={<code className={classes.code}>src/{props.root}/{props.page}.js</code>}
-      </Header>
+      </Headline>
       
 
       <div className={classes.description}>

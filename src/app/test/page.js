@@ -1,9 +1,13 @@
 "use client"
 
+import { Header } from '../../../components/Header'
 import { Main } from '../../../components/Main'
 
 export default function Home() {
   return (
-    <Main root="test" page="test"/>
+    <div>
+      <Header />
+      <Main root="test" page="test"/>
+    </div>
   )
 }
